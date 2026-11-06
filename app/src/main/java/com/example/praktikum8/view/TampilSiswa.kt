@@ -59,3 +59,16 @@ fun TampilSiswa(
                         Text(item.first.uppercase(), fontSize = 16.sp)
                         Text(text = item.second, fontWeight = FontWeight.Bold, fontSize = 16.sp)
                     }
+                    Divider(thickness = dimensionResource(R.dimen.thickness_divider))
+                }
+                Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_small)))
+                Button(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = onBackButtonClicked
+                ) {
+                    Text(stringResource(R.string.back))
+                }
+            }
+        }
+    }
+}

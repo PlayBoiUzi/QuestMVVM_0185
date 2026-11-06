@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.praktikum8.ui.theme.MVVMTheme
+import com.example.praktikum8.ui.theme.PRAKTIKUM8Theme
 import com.example.praktikum8.view.uicontroller.SiswaApp
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MVVMTheme {
+            PRAKTIKUM8Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     SiswaApp(
                         modifier = Modifier.padding(innerPadding)
